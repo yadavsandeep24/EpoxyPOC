@@ -26,11 +26,13 @@ class DashboardRepository @Inject constructor(
             override fun saveCallResult(item: Containers) {
                 Log.d("SAN","item.header -->"+item.header)
                 containers = item
+                //provision for offline data saving
             }
 
             override fun shouldFetch(data: Containers?) = true
 
             override fun loadFromDb(): LiveData<Containers>{
+                //data will come from db rght now coming for remote source
                 return object : LiveData<Containers>() {
                     override fun onActive() {
                         super.onActive()

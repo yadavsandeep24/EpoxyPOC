@@ -1,8 +1,6 @@
 package com.zeptolearn.epoxypoc.util
 
-import com.zeptolearn.epoxypoc.util.Status.ERROR
-import com.zeptolearn.epoxypoc.util.Status.LOADING
-import com.zeptolearn.epoxypoc.util.Status.SUCCESS
+import com.zeptolearn.epoxypoc.util.Status.*
 
 /**
  * A generic class that holds a value with its loading status.
