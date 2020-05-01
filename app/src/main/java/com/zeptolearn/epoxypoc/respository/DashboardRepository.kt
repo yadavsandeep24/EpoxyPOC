@@ -44,7 +44,7 @@ class DashboardRepository @Inject constructor(
 
             override fun createCall() :LiveData<ApiResponse<Containers>>{
                 return if (position == 0) {
-                    service.downloadFileJsonFileTypeOne()
+                    service.downloadJsonFileTypeOne()
                 } else {
                     service.downloadJsonFileTypeTwo()
                 }

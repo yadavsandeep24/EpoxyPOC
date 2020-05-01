@@ -10,7 +10,7 @@ import retrofit2.http.GET
 interface EpoxyPocService {
 
     @GET("homepage.json")
-    fun  downloadFileJsonFileTypeOne(): LiveData<ApiResponse<Containers>>
+    fun  downloadJsonFileTypeOne(): LiveData<ApiResponse<Containers>>
 
 
     @GET("homepage1.json")
