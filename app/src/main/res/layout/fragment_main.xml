@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <data>
+
+        <import type="com.zeptolearn.epoxypoc.util.Status" />
+
+        <import type="com.zeptolearn.epoxypoc.util.Resource" />
+
+        <import type="androidx.lifecycle.LiveData"/>
+
+        <import type="com.zeptolearn.epoxypoc.db.entity.Containers"/>
+
+        <variable
+            name="container"
+            type="LiveData&lt;Resource&lt;Containers>>" />
+
+    </data>-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment">
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"/>
+
+    <com.agrawalsuneet.loaderspack.loaders.CurvesLoader
+        android:id="@+id/progress_bar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:curves_animDuration="1000"
+        app:curves_curveColor="@color/colorAccent"
+        app:curves_curveSweepAngle="180"
+        app:curves_curveWidth="3dp"
+        app:curves_distanceBetweenCurves="5dp"
+        app:curves_interpolator="@android:anim/linear_interpolator"
+        app:curves_noOfCurves="5"
+        app:curves_outermostCurveRadius="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
